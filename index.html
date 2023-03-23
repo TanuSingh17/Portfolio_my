@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="" width=device-width, initial-scale=1.0>
+    <title>Tanu Singh - Front End Developer</title>
+    <link rel="icon" type="image/x-icon" href="images/pic-logo.jpeg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./footer.css">
+
+</head>
+
+<body>
+
+    <div id="preloader"></div>
+
+    <div class="container">
+
+        <div class="sidebar">
+            <!--================Navbar====================-->
+            <nav>
+                <div id="mySidebar" class="sidebar">
+                    <ul>
+                        <li><a href="index.html">Home</li></a>
+                        <li><a href="intro.html">Dashboard</li></a>
+                        <li><a href="images/Resume_Tanu_Singh.pdf" target="_blank">Resume</a></li></a>
+                        <li><a href="linktree.html">Links</li></a>
+                    </ul>
+            </nav>
+        </div>
+        <!--================Main========================-->
+        <div class="main" id="main">
+            <button class="openbtn" onclick="toggleNav()">
+                <i class="fas fa-bars" id="hamburger"></i>
+            </button>
+            <div class="infoContainer">
+                <div class="devInfo">
+                    <div class="hello">Hi There👋,</div>
+                    <div class="name">I'm <i>Tanu Singh</i></div>
+                    <div class="about">
+                        <h1 style="margin: auto; width: 50vw; ">I'm a <span class="auto-type"></span></h1>
+                    </div>
+                    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+                    <script>
+                        var typed = new Typed(".auto-type", {
+                            strings: ["Frontend Developer", "Graphic Designer"],
+                            typeSpeed: 150,
+                            backSpeed: 150,
+                            loop: true
+                        })
+                    </script>
+
+                    <div class="moreabout">I am a Front End Developer and Also a Graphic Designer, <br> I belong from
+                        Gorakhpur, Uttar Pradesh.
+                    </div>
+
+                    <div class="buttons">
+                        <a href="images/Resume_Tanu_Singh.pdf" target="_blank"> <button class="btn">Download
+                                Resume</button></a>
+
+                        <div class="icon-socials">
+                            <a href="https://www.linkedin.com/in/tanu-singh-3a5345203/"
+                                class="fab fa-linkedin" target="_blank"></a>
+                            <a href="https://www.instagram.com/tanu_singh_0_4_" class="fab fa-instagram" target="_blank"></a>
+                            <a href="https://github.com/TanuSingh17" class="fab fa-github" target="_blank"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="devPic">
+                    <img src="images/my.jpg" alt="Tanu Singh" height="150px">
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div>
+        <img src="images/btn-LB.png" alt="o" height="30px" onclick="toggleDarkMode()">
+    </div>
+
+    <!--================Footer====================-->
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer1">
+                <div class="footer-heading">
+                    About Me
+                </div>
+                <p>
+                    Hey, My Name is Tanu Singh, Currently I am Pursuing My 3rd Year of UG (Bachelor of Technology) from ABES Engineering College
+                    in Computer Science and Engineering. I am a Front-end Developer and I am Also a Graphic Designer
+                
+
+                </p>
+            </div>
+            <div class="footer2">
+                <div class="footer-heading">
+                    Social Media Handles
+                </div>
+                <div class="social-media-icons">
+
+                    <a href="https://www.instagram.com/tanu_singh_0_4_" class="social-footer-icon instagram-icon"><i
+                            class="fab fa-instagram"></i></a>
+
+                    <a href="https://www.linkedin.com/in/tanu-singh-3a5345203/"
+                        class="social-footer-icon linkedin-icon"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/TanuSingh17" class="github-footer-icon github-icon">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- <div class="footer4">
+                <div class="footer-heading">
+                    Quick Links
+                </div>
+                <div>
+                    <ul class="footer-link-ul">
+
+
+                    </ul>
+                </div>
+            </div> -->
+        </div>
+    
+    </footer>
+
+    <script src="script.js"></script>
+
+
+    <footer class="footer">
+        <p><span>Author</span>: Tanu Singh</p>
+        <p><span>Email: </span><a href="2002tanudixit@gmail.com">2002tanudixit@gmail.com</a></p>
+    </footer>
+
+    <script>
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load", function () {
+            loader.style.display = "none"
+        }) 
+    </script>
+
+</body>
+
+</html>
